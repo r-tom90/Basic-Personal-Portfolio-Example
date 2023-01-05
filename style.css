@@ -1,0 +1,155 @@
+html {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  max-width: 900px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  line-height: 1.25rem;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+.nav-items {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  align-items: center;
+  margin: 0;
+  margin-left: auto;
+}
+
+.nav-item {
+  margin-right: 1rem;
+}
+
+.about-me-container {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 50px;
+}
+
+.about-me-text {
+  margin-right: 10px;
+}
+
+.goddess-img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.project-image {
+  width: 50%;
+}
+
+.project-title h3 {
+  display: inline;
+}
+
+details {
+  cursor: pointer;
+}
+summary {
+  list-style-type: circle;
+}
+
+#skills-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  color: rgb(73, 73, 73);
+  padding-bottom: 2rem;
+}
+
+#contact-container {
+  display: flex;
+  width: 100%;
+  justify-content: left;
+  flex-wrap: wrap;
+  color: rgb(73, 73, 73);
+}
+
+#contact-container > * {
+  font-size: 2em;
+  width: 2em;
+  margin-top: 1rem;
+}
+
+#skills-container > * {
+  font-size: 2em;
+  width: 2em;
+  margin-top: 1rem;
+}
+
+footer {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+span {
+  animation: colorPalette 3s ease-in-out infinite;
+  /* animation-name: colorPalette;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear; */
+  /* linear is enabled default, it’s not necessary to add it make it work but it can make your code more expressive */
+}
+
+@keyframes colorPalette {
+  0% {
+    color: #ee6055;
+  }
+  25% {
+    color: #60d394;
+  }
+  50% {
+    color: #aaf683;
+  }
+  75% {
+    color: #ffd97d;
+  }
+  100% {
+    color: #ff9b85;
+  }
+}
+
+@media only screen and (max-width: 925px) {
+  .about-me-container {
+    display: inline-block;
+    margin-left: 1rem;
+  }
+  body {
+    margin: 0 1rem;
+  }
+}
